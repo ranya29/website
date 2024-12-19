@@ -1,0 +1,124 @@
+/* Réinitialisation générale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+
+  body {
+    background-color: #f4f4f4;
+    color: #333;
+    height: 1000px;
+  }
+  
+  /* Header */
+  header {
+    background-color: #e0e0e0;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Navigation */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo  {
+    font-size: 24px;
+    font-weight: bold;
+    
+  }
+  img{
+    height: 100px;
+    width: 100px;
+  }
+  a{
+    padding:10px;
+  }
+  
+  .links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #4A7B86;
+    font-weight: 500;
+  }
+  
+  .buttons button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color:#4A7B86;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+    background-color: #4A7B86;
+    padding-top:10px;
+    height: 55px;
+}
+
+/* Conteneur de produits */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colonnes */
+    gap: 20px; /* Espacement entre les articles */
+    padding: 20px;
+}
+
+.product {
+    height: 350pxpx;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 8px 8px 0 0;
+    height: 230px;
+}
+
+.product h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .product-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur tablette */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .product-container {
+        grid-template-columns: 1fr; /* 1 colonne sur mobile */
+    }
+}

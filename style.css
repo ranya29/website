@@ -1,0 +1,143 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #2f2f2f; /* Gris foncé pour un fond discret */
+    color: #ccc; /* Texte gris clair pour un bon contraste */
+}
+
+/* Header */
+header {
+    background-color: #ff5858; /* Noir pour l'entête */
+    color: white;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+
+/* Logo Styles */
+header .logo img {
+    height: 50px;  /* Ajustez la taille du logo selon vos besoins */
+    width: auto;   /* Conserve les proportions de l'image */
+    display: block;
+}
+
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+header nav ul li a:hover {
+    color: #f9b500; /* Jaune pour l'effet au survol */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #333; /* Gris foncé pour la section hero */
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero .hero-content h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero .hero-content p {
+    font-size: 1.25rem;
+    margin: 20px 0;
+}
+
+.hero .btn {
+    text-decoration: none;
+    background-color: #f9b500; /* Jaune pour attirer l'attention */
+    color: #333;
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #333; /* Noire au survol pour un contraste net */
+    color: white;
+}
+
+/* Categories Section */
+.categories {
+    background-color: #1a1a1a; /* Noir pour un contraste avec le contenu */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.categories h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.category-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.category-item {
+    background-color: #333; /* Gris foncé pour les catégories */
+    color: white;
+    padding: 20px;
+    width: 23%;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.category-item h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.category-item a {
+    text-decoration: none;
+    color: #f9b500; /* Jaune pour les liens */
+    font-weight: 500;
+}
+
+.category-item:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Section */
+footer {
+    background-color: #1a1a1a; /* Noir pour le pied de page */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+footer p {
+    margin: 0;
+}

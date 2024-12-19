@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Panier</title>
+    <link rel="stylesheet" href="stylePanier.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Your Panier</h1>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <!-- Product Input Section -->
+        <section class="product-input">
+            <h2>Add a Product</h2>
+            <label for="product-name">Noun of Product:</label>
+            <input type="text" id="product-name" placeholder="Enter product name">
+
+            <label for="product-code">Code of Product:</label>
+            <input type="number" id="product-code" placeholder="Enter product code">
+            <label for="product-name">Color of product</label>
+            <input type="text" id="product-color" placeholder="Enter product color">
+            <label for="product-quantity">Quantity:</label>
+            <input type="number" id="product-quantity" placeholder="Enter quantity" min="1">
+
+
+            <button id="add-to-cart">Add to Panier</button>
+            <p class="info-text">Click the button to calculate price: code price * quantity.</p>
+        </section>
+
+        <!-- Cart Display Section -->
+        <section class="cart-display">
+            <h2>What is in My Panier</h2>
+            <ul id="cart-items">
+                <!-- Cart items will appear here dynamically -->
+            </ul>
+        </section>
+
+        <!-- Price Summary Section -->
+        <section class="price-summary">
+            <h2>Price Summary</h2>
+            <p id="total-price">Total: 0.00 dt (including delivery)</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Powered by the Seamery Copyright 2024 -.- All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="panier.js"></script>
+</body>
+</html>

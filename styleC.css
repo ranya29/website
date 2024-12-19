@@ -1,0 +1,127 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container Styling */
+.container {
+    display: flex;
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    width: 800px;
+    border-radius: 8px;
+}
+
+/* Login Section */
+.login-section, .signup-section {
+    padding: 30px;
+    flex: 1;
+}
+
+.login-section {
+    border-right: 1px solid #e0e0e0;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 12px;
+    margin: 10px 0 5px;
+}
+
+input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.forgot-link {
+    font-size: 12px;
+    color: #0073e6;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.btn-connect, .btn-signup {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-connect:hover, .btn-signup:hover {
+    background-color: #444;
+}
+
+.social-login p {
+    font-size: 12px;
+    margin: 20px 0 10px;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.google-btn, .apple-btn {
+    border: none;
+    background: #f4f4f4;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.google-btn:hover, .apple-btn:hover {
+    background: #ddd;
+}
+
+/* Signup Section */
+.signup-section ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.signup-section li {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.btn-signup {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
